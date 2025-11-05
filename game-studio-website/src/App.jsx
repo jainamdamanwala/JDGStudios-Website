@@ -17,7 +17,7 @@ const Pill = ({ children }) => (
 const Logo = () => (
   <div className="flex items-center gap-2">
     <span className="inline-block h-8 w-8 rounded-xl bg-gradient-to-br from-indigo-400 via-fuchsia-500 to-rose-400 shadow" />
-    <span className="font-extrabold tracking-tight text-lg md:text-xl">JDG Studio</span>
+    <span className="font-extrabold tracking-tight text-lg md:text-xl">JDG Studios</span>
   </div>
 );
 
