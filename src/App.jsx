@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import logo from "./assets/JDGLogo.png";
+import Jainam from "./assets/ProfilePic.jpg"
 
 // Single‑file, responsive landing site for a game studio or a specific game.
 // Works in a standard React/Vite project. Uses Tailwind utility classes.
@@ -16,7 +18,7 @@ const Pill = ({ children }) => (
 
 const Logo = () => (
   <div className="flex items-center gap-2">
-    <span className="inline-block h-8 w-8 rounded-xl bg-gradient-to-br from-indigo-400 via-fuchsia-500 to-rose-400 shadow" />
+    <img src={logo} alt="JDG Studios Logo" className="h-8 w-8 rounded-xl object-cover" />
     <span className="font-extrabold tracking-tight text-lg md:text-xl">JDG Studios</span>
   </div>
 );
@@ -217,7 +219,9 @@ export default function Website() {
           {["Jainam D.", "Dev One", "Dev Two", "Artist"].map((name, i) => (
             <div key={name} className="rounded-2xl border border-white/10 bg-white/5 p-5">
               <div className="flex items-center gap-3">
-                <div className="h-12 w-12 rounded-xl bg-gradient-to-br from-indigo-400 to-fuchsia-500" />
+                <div className="h-15 w-12 rounded-xl bg-gradient-to-br from-indigo-400 to-fuchsia-500">{
+                    [<img src={Jainam} alt="Jainam Profile" className="h-15 w-12 rounded-xl bg-gradient-to-br from-indigo-400 to-fuchsia-500" />][i]
+                  }</div>
                 <div>
                   <div className="font-semibold">{name}</div>
                   <div className="text-xs text-white/60">{["Founder / Engineer","Gameplay","Systems","Art & UI"][i]}</div>
