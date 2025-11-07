@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import logo from "./assets/JDGLogo.png";
+import logo from "./assets/JDGLogo-Black.png";
 import Jainam from "./assets/ProfilePic.jpg"
 
 // Single‑file, responsive landing site for a game studio or a specific game.
